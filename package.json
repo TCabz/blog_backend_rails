@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC,
+  // "directories": {
+  //   "lib": "lib",
+  //   "test": "test"
+  // },
   "engines": {
     "node": "15.4.0",
     "yarn": "1.22.10"
@@ -14,10 +17,7 @@
   "scripts": {
     "build": "yarn --cwd client install && yarn --cwd client build",
     "deploy": "cp -a client/build/. public/",
-    "heroku-postbuild": "yarn build && yarn deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "yarn build && yarn deploy"
+    // "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
 }
